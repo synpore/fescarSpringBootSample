@@ -1,0 +1,27 @@
+# Spring boot application
+spring:
+  application:
+    name: fescarSpringBootSample-storage
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/tc_storage?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.alibaba.druid.proxy.DruidDriver
+
+
+
+
+# Base packages to scan Dubbo Component: @com.alibaba.dubbo.config.annotation.Service
+dubbo:
+  scan:
+    base-packages: com.hcsoc.storage.service
+
+# Dubbo Application
+## The default value of dubbo.application.name is ${spring.application.name}
+## dubbo.application.name=${spring.application.name}
+
+## Dubbo Registry
+dubbo:
+  registry:
+    address: multicast://224.5.6.7:1234?unicast=false
