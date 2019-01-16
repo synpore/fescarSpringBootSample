@@ -3,20 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>storage</artifactId>
+        <artifactId>account</artifactId>
         <groupId>com.hcsoc</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>storage-service</artifactId>
-    <groupId>com.hcsoc</groupId>
-    <packaging>jar</packaging>
+    <artifactId>account-service</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.hcsoc</groupId>
-            <artifactId>storage-api</artifactId>
+            <artifactId>account-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -88,5 +86,6 @@
         </dependency>
 
     </dependencies>
+
 
 </project>

@@ -2,12 +2,13 @@ package com.hcsoc.storage.service;
 
 import com.alibaba.fescar.core.context.RootContext;
 import com.hcsoc.storage.api.StorageService;
+import lombok.Setter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-
+@Setter
 public class StorageServiceImpl implements StorageService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(StorageService.class);

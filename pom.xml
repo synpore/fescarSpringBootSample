@@ -12,6 +12,8 @@
     <modules>
         <module>purchaseCar</module>
         <module>storage</module>
+        <module>account</module>
+        <module>Order</module>
     </modules>
 
     <properties>
@@ -22,6 +24,7 @@
         <spring-core.version>5.1.2.RELEASE</spring-core.version>
         <fescar-all.version>0.1.0-SNAPSHOT</fescar-all.version>
         <alibaba-spring-context-support.version>1.0.2</alibaba-spring-context-support.version>
+        <lombok-version>1.16.16</lombok-version>
     </properties>
 
 
