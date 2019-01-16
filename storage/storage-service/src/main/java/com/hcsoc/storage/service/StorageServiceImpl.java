@@ -1,6 +1,5 @@
 package com.hcsoc.storage.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fescar.core.context.RootContext;
 import com.hcsoc.storage.api.StorageService;
 import org.slf4j.Logger;
@@ -8,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-@Service
+
 public class StorageServiceImpl implements StorageService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(StorageService.class);

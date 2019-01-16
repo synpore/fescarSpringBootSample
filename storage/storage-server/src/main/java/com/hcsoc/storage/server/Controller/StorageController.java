@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/storage")
+@RestController
 public class StorageController {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(StorageController.class);
