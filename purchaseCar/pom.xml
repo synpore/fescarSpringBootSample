@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>purchaseCar</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>purchase-api</module>
+        <module>purchase-service</module>
+        <module>purchase-server</module>
+    </modules>
 
     <dependencies>
         <!-- Spring Boot dependencies -->

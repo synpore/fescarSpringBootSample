@@ -23,7 +23,10 @@ public class AccountServiceImpl implements AccountService {
 
     public void debit(String userId, int money) {
         LOGGER.info("Account Service ... xid: " + RootContext.getXID());
-        jdbcTemplate.update("update account_tbl set money = money - ? where user_id = ?", new Object[]{money, userId});
+        int num=jdbcTemplate.update("update account_tbl set money = money - ? where user_id = ? and money>?", new Object[]{money, userId,money});
+        if(num==0){
+            throw new RuntimeException();
+        }
         LOGGER.info("Account Service End ... ");
 
     }
